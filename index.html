@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Curious Chronicle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <h1>The Curious Chronicle</h1>
+      <p class="tagline">Where Ideas Blossom & Stories Unfold</p>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#subscribe">Subscribe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Discover Inspiring Stories, Insights, and Ideas</h2>
+      <p>Join a community of curious minds exploring everything from lifestyle to technology.</p>
+      <button onclick="scrollToSection('featured')">Read Our Latest Posts</button>
+      <button onclick="scrollToSection('subscribe')">Subscribe Now</button>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section class="featured" id="featured">
+    <div class="container">
+      <h2>Handpicked for You</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="ai-future.jpg" alt="The Future of AI">
+          <h3>The Future of AI in Everyday Life</h3>
+          <p>How technology is transforming the mundane into the extraordinary.</p>
+        </div>
+        <div class="card">
+          <img src="productivity.jpg" alt="Productivity Hacks">
+          <h3>5 Simple Hacks to Improve Your Productivity</h3>
+          <p>Small changes that make a big difference.</p>
+        </div>
+        <div class="card">
+          <img src="travel.jpg" alt="Travel Diaries">
+          <h3>Travel Diaries: Hidden Gems in Europe</h3>
+          <p>Explore breathtaking locations off the beaten path.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Who We Are</h2>
+      <p>
+        <strong>The Curious Chronicle</strong> is your go-to destination for engaging content that sparks curiosity and drives meaningful conversations. We cover topics ranging from personal growth and travel to tech trends and beyond.
+      </p>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="subscribe" id="subscribe">
+    <div class="container">
+      <h2>Stay Updated</h2>
+      <p>Subscribe to our newsletter and never miss out on our latest posts and exclusive content.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 The Curious Chronicle. All Rights Reserved.</p>
+      <nav>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
