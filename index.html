@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Curious Chronicle</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header Section -->
@@ -28,8 +30,10 @@
     <div class="container">
       <h2>Discover Inspiring Stories, Insights, and Ideas</h2>
       <p>Join a community of curious minds exploring everything from lifestyle to technology.</p>
-      <button onclick="scrollToSection('featured')">Read Our Latest Posts</button>
-      <button onclick="scrollToSection('subscribe')">Subscribe Now</button>
+      <div class="hero-buttons">
+        <button onclick="scrollToSection('featured')" class="btn-primary">Read Our Latest Posts</button>
+        <button onclick="scrollToSection('subscribe')" class="btn-secondary">Subscribe Now</button>
+      </div>
     </div>
   </section>
 
@@ -40,18 +44,27 @@
       <div class="cards">
         <div class="card">
           <img src="ai-future.jpg" alt="The Future of AI">
-          <h3>The Future of AI in Everyday Life</h3>
-          <p>How technology is transforming the mundane into the extraordinary.</p>
+          <div class="card-content">
+            <h3>The Future of AI in Everyday Life</h3>
+            <p>How technology is transforming the mundane into the extraordinary.</p>
+            <button class="btn-primary">Read More</button>
+          </div>
         </div>
         <div class="card">
           <img src="productivity.jpg" alt="Productivity Hacks">
-          <h3>5 Simple Hacks to Improve Your Productivity</h3>
-          <p>Small changes that make a big difference.</p>
+          <div class="card-content">
+            <h3>5 Simple Hacks to Improve Your Productivity</h3>
+            <p>Small changes that make a big difference.</p>
+            <button class="btn-primary">Read More</button>
+          </div>
         </div>
         <div class="card">
           <img src="travel.jpg" alt="Travel Diaries">
-          <h3>Travel Diaries: Hidden Gems in Europe</h3>
-          <p>Explore breathtaking locations off the beaten path.</p>
+          <div class="card-content">
+            <h3>Travel Diaries: Hidden Gems in Europe</h3>
+            <p>Explore breathtaking locations off the beaten path.</p>
+            <button class="btn-primary">Read More</button>
+          </div>
         </div>
       </div>
     </div>
@@ -75,7 +88,7 @@
       <form>
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
-        <button type="submit">Subscribe</button>
+        <button type="submit" class="btn-primary">Subscribe</button>
       </form>
     </div>
   </section>
