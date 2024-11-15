@@ -2,7 +2,7 @@
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #333;
 }
 ul {
@@ -12,16 +12,20 @@ ul {
 /* Container */
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 /* Header */
 .header {
-  background: #ff7e5f;
+  background: #1f2937;
   color: white;
   padding: 20px 0;
   text-align: center;
+}
+.header h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .header nav ul {
   display: flex;
@@ -31,76 +35,107 @@ ul {
 .header nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: 600;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(to right, #4b6cb7, #182848);
   color: white;
   text-align: center;
-  padding: 100px 0;
+  padding: 80px 0;
 }
-.hero button {
-  background: white;
-  color: #ff7e5f;
-  padding: 10px 20px;
+.hero h2 {
+  font-size: 2rem;
+}
+.hero-buttons {
+  margin-top: 20px;
+}
+.btn-primary {
+  background: #ff7e5f;
   border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  margin: 10px;
+  transition: background 0.3s;
+}
+.btn-primary:hover {
+  background: #ff6b4f;
+}
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-secondary:hover {
+  background: white;
+  color: #182848;
 }
 
 /* Featured Section */
 .featured {
-  background: #f4f4f4;
+  background: #f8f9fa;
   padding: 50px 0;
 }
-.featured .cards {
-  display: flex;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 .card {
   background: white;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  flex: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .card img {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 15px;
 }
 .card h3 {
-  padding: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-
-/* About Section */
-.about {
-  padding: 50px 0;
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
 }
 
 /* Subscribe Section */
 .subscribe {
-  background: #ff7e5f;
+  background: #182848;
   color: white;
   padding: 50px 0;
   text-align: center;
 }
 .subscribe form input {
   padding: 10px;
-  margin: 5px 0;
+  margin: 5px 5px 10px 0;
+  width: 45%;
 }
 .subscribe form button {
-  background: white;
-  color: #ff7e5f;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+  display: inline-block;
+  width: 100px;
 }
 
 /* Footer */
 .footer {
-  background: #333;
+  background: #1f2937;
   color: white;
-  padding: 20px 0;
   text-align: center;
+  padding: 20px 0;
+}
+.footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
